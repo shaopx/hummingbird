@@ -1,0 +1,192 @@
+import 'package:flutter/material.dart';
+
+TextTheme buildIOSTextTheme(TextTheme baseTextTheme) {
+  return baseTextTheme.copyWith(
+    displayLarge: baseTextTheme.displayLarge!.copyWith(
+      leadingDistribution: TextLeadingDistribution.even,
+      fontWeight: FontWeight.w700,
+      fontSize: 96,
+      height: 1.5,
+      letterSpacing: 0,
+    ),
+    displayMedium: baseTextTheme.displayMedium!.copyWith(
+      leadingDistribution: TextLeadingDistribution.even,
+      fontWeight: FontWeight.w500,
+      fontSize: 60,
+      height: 1.5,
+      letterSpacing: 0,
+    ),
+    displaySmall: baseTextTheme.displaySmall!.copyWith(
+      leadingDistribution: TextLeadingDistribution.even,
+      fontWeight: FontWeight.w400,
+      fontSize: 48,
+      height: 1.5,
+      letterSpacing: 0,
+    ),
+    headlineMedium: baseTextTheme.headlineMedium!.copyWith(
+      leadingDistribution: TextLeadingDistribution.even,
+      fontWeight: FontWeight.w400,
+      fontSize: 34,
+      height: 1.5,
+      letterSpacing: 0,
+    ),
+    headlineSmall: baseTextTheme.headlineSmall!.copyWith(
+      leadingDistribution: TextLeadingDistribution.even,
+      fontWeight: FontWeight.w600,
+      fontSize: 24,
+      height: 1.5,
+      letterSpacing: 0,
+    ),
+    titleLarge: baseTextTheme.titleLarge!.copyWith(
+      fontWeight: FontWeight.bold,
+      fontSize: 17,
+      height: 1.3,
+      letterSpacing: 0,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+    titleMedium: baseTextTheme.titleMedium!.copyWith(
+      fontWeight: FontWeight.w600,
+      fontSize: 16,
+      height: 1.5,
+      letterSpacing: -0.41,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+    titleSmall: baseTextTheme.titleSmall!.copyWith(
+      fontWeight: FontWeight.w400,
+      fontSize: 13,
+      height: 1.4,
+      letterSpacing: -0.08,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+    bodyLarge: baseTextTheme.bodyLarge!.copyWith(
+      fontWeight: FontWeight.w400,
+      fontSize: 15,
+      height: 1.4,
+      letterSpacing: -0.24,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+    bodyMedium: baseTextTheme.bodyMedium!.copyWith(
+      fontWeight: FontWeight.w600,
+      fontSize: 15,
+      height: 1.3,
+      letterSpacing: -0.24,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+    labelLarge: baseTextTheme.labelLarge!.copyWith(
+      fontWeight: FontWeight.w700,
+      fontSize: 15,
+      height: 1.4,
+      letterSpacing: 0,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+    bodySmall: baseTextTheme.bodySmall!.copyWith(
+      fontWeight: FontWeight.w500,
+      fontSize: 13,
+      height: 1.3,
+      letterSpacing: -0.08,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+    labelSmall: baseTextTheme.labelSmall!.copyWith(
+      fontWeight: FontWeight.w500,
+      fontSize: 11,
+      height: 1.3,
+      letterSpacing: -0.08,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+  );
+}
+
+TextTheme buildAndroidTextTheme(TextTheme baseTextTheme) {
+  return baseTextTheme.copyWith(
+    displayLarge: baseTextTheme.displayLarge!.copyWith(
+      fontWeight: FontWeight.w700,
+      fontSize: 96,
+      height: 1.5,
+      letterSpacing: 0,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+    displayMedium: baseTextTheme.displayMedium!.copyWith(
+      fontWeight: FontWeight.w500,
+      fontSize: 60,
+      height: 1.5,
+      letterSpacing: 0,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+    displaySmall: baseTextTheme.displaySmall!.copyWith(
+      fontWeight: FontWeight.w400,
+      fontSize: 48,
+      height: 1.5,
+      letterSpacing: 0,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+    headlineMedium: baseTextTheme.headlineMedium!.copyWith(
+      fontWeight: FontWeight.w400,
+      fontSize: 34,
+      height: 1.5,
+      letterSpacing: 0,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+    headlineSmall: baseTextTheme.headlineSmall!.copyWith(
+      fontWeight: FontWeight.w600,
+      fontSize: 24,
+      height: 1.5,
+      letterSpacing: 0,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+    titleLarge: baseTextTheme.titleLarge!.copyWith(
+      fontWeight: FontWeight.bold,
+      fontSize: 18,
+      height: 1.5,
+      letterSpacing: 0.15,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+    titleMedium: baseTextTheme.titleMedium!.copyWith(
+      fontSize: 16,
+      height: 1.5,
+      letterSpacing: 0.15,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+    titleSmall: baseTextTheme.titleSmall!.copyWith(
+      fontWeight: FontWeight.w400,
+      fontSize: 12,
+      height: 1.5,
+      letterSpacing: 0,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+    bodyLarge: baseTextTheme.bodyLarge!.copyWith(
+      fontWeight: FontWeight.w400,
+      fontSize: 14,
+      height: 1.5,
+      letterSpacing: 0,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+    bodyMedium: baseTextTheme.bodyMedium!.copyWith(
+      fontWeight: FontWeight.w600,
+      fontSize: 14,
+      height: 1.4,
+      letterSpacing: 0,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+    labelLarge: baseTextTheme.labelLarge!.copyWith(
+      fontWeight: FontWeight.w600,
+      fontSize: 14,
+      height: 1.5,
+      letterSpacing: 0.25,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+    bodySmall: baseTextTheme.bodySmall!.copyWith(
+      fontWeight: FontWeight.w500,
+      fontSize: 12,
+      height: 1.4,
+      letterSpacing: 0.2,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+    labelSmall: baseTextTheme.labelSmall!.copyWith(
+      fontWeight: FontWeight.w300,
+      fontSize: 10,
+      height: 1.4,
+      letterSpacing: 0.2,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+  );
+}
